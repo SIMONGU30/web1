@@ -1,0 +1,16 @@
+.fuente{
+    font-family: 'Shippori Antique', sans-serif;
+}
+
+.fondo {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.9864320728291317) 28%, rgba(191,43,43,1) 54%, rgba(0,0,0,1) 80%);
+}
+
+.fondobanner{
+    background-image: url(img/hd.jpg);
+    height: 600px;
+    background-attachment: fixed;
+    background-position:top center ;
+
+}
