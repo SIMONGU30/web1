@@ -9,8 +9,9 @@
 
 .fondobanner{
     background-image: url(img/hd.jpg);
-    height: 600px;
+    height: 200px;
     background-attachment: fixed;
     background-position:top center ;
 
 }
+
