@@ -1,0 +1,8 @@
+.fondo{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #ffee00fb 28%, rgb(247, 150, 5) 54%, #ffee00fb  80%);
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif  !important;
+}

@@ -4,11 +4,11 @@
 
 .fondo {
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.9864320728291317) 28%, rgba(191,43,43,1) 54%, rgba(0,0,0,1) 80%);
+    background: linear-gradient(90deg, #ffee00fb 28%, rgb(247, 150, 5) 54%, #ffee00fb  80%);
 }
 
 .fondobanner{
-    background-image: url(img/hd.jpg);
+    background-image: url(img/imagenNaruto6.png);
     height: 200px;
     background-attachment: fixed;
     background-position:top center ;
