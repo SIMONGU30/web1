@@ -1,8 +1,15 @@
 .fondo{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, #ffee00fb 28%, rgb(247, 150, 5) 54%, #ffee00fb  80%);
+    background: linear-gradient(90deg, #2600fffb 28%, rgb(255, 255, 255) 54%, #2600fffb   80%);
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif  !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    font-weight: bold  !important;
+}
+#colorCarroImagen{
+    background-color: rgb(0, 17, 255);
 }
