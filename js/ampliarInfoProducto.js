@@ -1,6 +1,7 @@
 export  function ampliarInfoProducto(event){
 
     let producto={}
+    
 
     if(event.target.classList.contains("btn")){
        
@@ -13,6 +14,7 @@ export  function ampliarInfoProducto(event){
         }
         
         let etiquetaNombreProducto=document.getElementById("nombreProducto")
+        etiquetaNombreProducto.classList.add("text-warning")
         etiquetaNombreProducto.textContent=producto.nombre
 
         let etiquetaPrecioProducto=document.getElementById("precioProduco")

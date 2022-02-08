@@ -2,6 +2,7 @@
 import {llenarTienda} from"./llenarTienda.js"
 import {ampliarInfoProducto}from"./ampliarInfoProducto.js"
 import{agregarcarrito} from "./agruegarCarrito.js"
+import{verCarrito} from "./verCarrito.js"
 
 // variables globales
 
@@ -24,8 +25,12 @@ llenarTienda()
 // llamo a la fumcion agruegar carrito
 
     let botonAgregarCarrito=document.getElementById("botonAgregarProducto")
+    
     botonAgregarCarrito.addEventListener("click",function(){
+
+        
     let cantidadProducto=document.getElementById("cantidadProducto").value
+    
     producto.cantidad=cantidadProducto
     carrito.push(producto)
     
@@ -33,9 +38,28 @@ llenarTienda()
     // oculto la modal 
     modalinfoproducto.hide()
 
+    let etiquetaCantidad=document.getElementById("cantidadProducto")
+    etiquetaCantidad.value=1
     //lamar la funcion agruegarcarrito
 
 
     agregarcarrito(carrito)
+
     
 })
+
+
+
+  //llamar ver carrito
+
+
+let botonCarrito=document.getElementById("botonCarrito")
+
+botonCarrito.addEventListener("click",function(){
+
+    verCarrito(carrito)
+})
+
+
+
+

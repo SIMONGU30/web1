@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilosTienda.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body class="fondo" class=" text-center">
     
@@ -32,7 +32,7 @@
                     </ul>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">
+                        <a class="nav-link active" aria-current="page" href="#" id="botonCarrito">
                           <i class="fas fa-shopping-cart fa-2x"></i> 
                           <span id="pildora" class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger invisible">
                             99+
@@ -50,11 +50,19 @@
     </header>
     
     <main>
-             <div class="container-fluid">
+             <div class="container-fluid w-100">
                <div class="row">
                  
                    <img src="../img/SasukeTienda2.jpg" alt="">
                  
+               </div>
+
+               <div class="container">
+                 <div class="row text-center mt-5 text-dark" >
+                     <h1  id="tituloTienda"  > <i class="fas fa-store"></i> 
+                       TIENDA VIRTUAL
+                     </h1>
+                 </div> 
                </div>
              </div>
             <div class="container mt-5">
@@ -74,7 +82,7 @@
               </div>
               <div class="modal-body">
                  <div class="container">
-                      <div class="row">
+                      <div class="row " >
                         <div class="col-12 col-md-4">
                           <img src="../img/itachi.png" alt="" class="img-fluid w-100" id="imagenProducto">
                         </div>
@@ -97,6 +105,32 @@
             </div>
           </div>
         </div>
+    </section>
+
+    <section>
+      <div class="modal fade" id="modalVerCarrito" >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Tienda Naruto </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container" id="contenedorCarrito">
+                
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" id="botonTotal">TOTAL</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Comprar</button>
+              <button type="button" class="btn btn-primary" id="botonLimpiar">limpiar</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
 

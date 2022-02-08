@@ -2,6 +2,8 @@ export function agregarcarrito(carrito){
     // crear una referencia a la pildora 
 
     let pildora=document.getElementById("pildora")
+    
+    
     pildora.classList.remove("invisible")
    // console.log(carrito)
 

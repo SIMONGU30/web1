@@ -1,19 +1,18 @@
     export function llenarTienda(){
     let productos=[
-        {nombre:"Traje de Minato",precio:" $150.000",imagen : "../img/naruto1.png", descripcion :"BATA ORIGINAL Y EXCLUSIVA" },
-        {nombre:"Traje de Naruto",precio:"$160.000",imagen : "../img/naruto2.png", descripcion :"BATA ORIGINAL Y EXCLUSIVA" },
-        {nombre:"Traje de Itachi ",precio:"$150.000",imagen : "../img/naruto3.png", descripcion :"BATA ORIGINAL Y EXCLUSIVA" },
-        {nombre:"Guantes Naruto ",precio:"$25.000",imagen : "../img/naruto4.png", descripcion :"GUANTES EXCLUSIVOS DE CUERO" },
-        {nombre:"Botas de Naruto",precio:"$40.000",imagen : "../img/naruto5.png", descripcion :"BOTAS ORIGINALES DE CUERO" },
-        {nombre:"Peluca de Kakashi ",precio:"$65.000",imagen : "../img/naruto6.png", descripcion :"PELUCA DE COLLECION " },
-        {nombre:"Mascara de Obito ",precio:"$50.000",imagen : "../img/naruto7.jpg", descripcion :"MASCARA DE MADERA  Y EXCLUSIVA" },
-        {nombre:" Caja de Kunais",precio:"$55.000",imagen : "../img/naruto8.jpg", descripcion :"ALTAMENTE FILOSOS" },
-        {nombre:"Atuendo de Naruto ",precio:"$95.000",imagen : "../img/naruto9.png", descripcion :"AUENDO ECLUSIVO DE ALGODON " },
-        {nombre:"Disfras de Sakura",precio:"$100.000",imagen : "../img/naruto10.png", descripcion :"DISFRAS CON PELUCA  Y BANDANA NINJA" }
+        {nombre:"Traje de Minato",precio:" 150000",imagen : "../img/naruto1.png", descripcion :"BATA ORIGINAL Y EXCLUSIVA" },
+        {nombre:"Traje de Naruto",precio:"160000",imagen : "../img/naruto2.png", descripcion :"BATA ORIGINAL Y EXCLUSIVA" },
+        {nombre:"Traje de Itachi ",precio:"150000",imagen : "../img/naruto3.png", descripcion :"BATA ORIGINAL Y EXCLUSIVA" },
+        {nombre:"Guantes Naruto ",precio:"25000",imagen : "../img/naruto4.png", descripcion :"GUANTES EXCLUSIVOS DE CUERO" },
+        {nombre:"Botas de Naruto",precio:"40000",imagen : "../img/naruto5.png", descripcion :"BOTAS ORIGINALES DE CUERO" },
+        {nombre:"Peluca de Kakashi ",precio:"65000",imagen : "../img/naruto6.png", descripcion :"PELUCA DE COLLECION " },
+        {nombre:"Mascara de Obito ",precio:"50000",imagen : "../img/naruto7.jpg", descripcion :"MASCARA DE MADERA  Y EXCLUSIVA" },
+        {nombre:" Caja de Kunais",precio:"55000",imagen : "../img/naruto8.jpg", descripcion :"ALTAMENTE FILOSOS" },
+        {nombre:"Atuendo de Naruto ",precio:"95000",imagen : "../img/naruto9.png", descripcion :"AUENDO ECLUSIVO DE ALGODON " },
+        {nombre:"Disfras de Sakura",precio:"100000",imagen : "../img/naruto10.png", descripcion :"DISFRAS CON PELUCA  Y BANDANA NINJA" }
 
     ]
     
-
 
     let fila=document.getElementById("fila")
 
