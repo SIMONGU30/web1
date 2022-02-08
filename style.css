@@ -15,3 +15,23 @@
 
 }
 
+#offcanvasExample{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #c5c5c2fb 28%, rgb(119, 145, 231) 54%, #c5c5c2fb  80%);
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-size: 28px;
+}
+
+#tituloRegistro{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-size: 28px;
+    text-align: center !important;
+}
+
+#imagenFROM{
+    border-radius: 8px;
+}
+

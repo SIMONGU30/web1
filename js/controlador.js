@@ -19,6 +19,7 @@ llenarTienda()
     listaProductos.addEventListener("click",function(event){
     
     producto=ampliarInfoProducto(event)
+
     modalinfoproducto.show()
 })
 
@@ -58,6 +59,30 @@ let botonCarrito=document.getElementById("botonCarrito")
 botonCarrito.addEventListener("click",function(){
 
     verCarrito(carrito)
+})
+let botonLimpiar=document.getElementById("botonLimpiar")
+
+
+    botonLimpiar.addEventListener("click",function(){
+        
+        let contenedorModal=document.getElementById("contenedorCarrito")
+        contenedorModal.innerHTML=""
+        contenedorModal=[]
+
+        let pildora=document.getElementById("pildora")
+        pildora.innerHTML=""
+        pildora=[]
+
+
+        let borrarTotal=document.getElementById("botonTotal")
+        borrarTotal.innerHTML="limpio"
+        borrarTotal=[]
+
+        carrito=[]
+
+       
+
+        
 })
 
 

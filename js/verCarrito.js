@@ -6,10 +6,11 @@ export function verCarrito(carrito){
    
 
     let contenedor=document.getElementById("contenedorCarrito")
+
     contenedor.innerHTML=""
     
 
-    /*if(length==0){
+    if(carrito.length==0){
 
         let contenedorNada=document.createElement("div")
         contenedorNada.classList.add("row")
@@ -22,9 +23,11 @@ export function verCarrito(carrito){
         console.log(fotoNada)
 
         
-        contenedorNada.appendChild(fotoNada)*/
+        contenedorNada.appendChild(fotoNada)}
 
-    
+        else {
+
+        
         
 
     carrito.forEach(function(producto){
@@ -61,10 +64,10 @@ export function verCarrito(carrito){
         cantidadProducto.classList.add("text-center")
         cantidadProducto.textContent=("CANTIDAD : ")+producto.cantidad 
 
-        let subtotalProducto=document.createElement("h9")
+        let subtotalProducto=document.createElement("h6")
         subtotalProducto.classList.add("text-center")
         subtotalProducto.classList.add("text-light")
-        subtotalProducto.textContent= ("SUBTOTAL : ")+ producto.precio*producto.cantidad
+        subtotalProducto.textContent= ("SUBTOTAL : ")+("$")+Intl.NumberFormat("de-DE").format (producto.precio*producto.cantidad)
 
         let raya=document.createElement("hr")
         //raya.classList.add("w-50")
@@ -92,7 +95,7 @@ export function verCarrito(carrito){
 
     })
         
-    
+}
 
     modalVerCarrito.show()
 
@@ -108,33 +111,12 @@ export function verCarrito(carrito){
         
 
     })
-    total.textContent=contador
+    total.textContent= ("$")+Intl.NumberFormat("de-DE").format(contador)
 
     })
     
     
     
-    let botonLimpiar=document.getElementById("botonLimpiar")
-
-
-    botonLimpiar.addEventListener("click",function(){
-
-        let contenedorModal=document.getElementById("contenedorCarrito")
-        contenedorModal.innerHTML=""
-        contenedorModal=[]
-
-        let pildora=document.getElementById("pildora")
-        pildora.innerHTML=""
-        pildora=[]
-
-
-        let borrarTotal=document.getElementById("botonTotal")
-        borrarTotal.innerHTML=""
-        borrarTotal=[]
-
-       
-
-        
-})
+    
     
 }
