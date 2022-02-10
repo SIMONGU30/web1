@@ -18,7 +18,8 @@ export  function ampliarInfoProducto(event){
         etiquetaNombreProducto.textContent=producto.nombre
 
         let etiquetaPrecioProducto=document.getElementById("precioProduco")
-        etiquetaPrecioProducto.textContent=producto.precio
+        etiquetaPrecioProducto.textContent=producto.precio 
+        
 
         let etiquetaImagenProducto=document.getElementById("imagenProducto")
         etiquetaImagenProducto.src=producto.foto

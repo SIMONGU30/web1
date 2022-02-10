@@ -9,23 +9,26 @@ export function verCarrito(carrito){
 
     contenedor.innerHTML=""
     
-
+    
     if(carrito.length==0){
 
-        let contenedorNada=document.createElement("div")
-        contenedorNada.classList.add("row")
+        
+        let filaNada=document.createElement("div")
+        filaNada.classList.add("row")
 
         let fotoNada=document.createElement("img")
         fotoNada.classList.add("fluid")
         fotoNada.classList.add("w-100")
         fotoNada.src="../img/nohayNada.png"
 
-        console.log(fotoNada)
-
         
-        contenedorNada.appendChild(fotoNada)}
+        filaNada.appendChild(fotoNada)
+        contenedor.appendChild(filaNada)
+    
+    }
 
-        else {
+
+    else {
 
         
         
@@ -57,7 +60,7 @@ export function verCarrito(carrito){
 
         let precioProducto=document.createElement("h4")
         precioProducto.classList.add("text-center")
-        precioProducto.textContent=("PRECIO : ")+producto.precio
+        precioProducto.textContent=producto.precio
 
 
         let cantidadProducto=document.createElement("h5")
@@ -67,8 +70,8 @@ export function verCarrito(carrito){
         let subtotalProducto=document.createElement("h6")
         subtotalProducto.classList.add("text-center")
         subtotalProducto.classList.add("text-light")
-        subtotalProducto.textContent= ("SUBTOTAL : ")+("$")+Intl.NumberFormat("de-DE").format (producto.precio*producto.cantidad)
-
+        subtotalProducto.textContent=("$")+Intl.NumberFormat("de-DE").format (producto.cantidad*producto.precio) 
+            
         let raya=document.createElement("hr")
         //raya.classList.add("w-50")
         raya.classList.add("mx-auto")
@@ -108,12 +111,26 @@ export function verCarrito(carrito){
 
         contador=contador + Number(producto.precio*producto.cantidad)
             
-        
+        console.log(contador)
 
     })
     total.textContent= ("$")+Intl.NumberFormat("de-DE").format(contador)
 
+    let botonUsd=document.getElementById("botonCamniarUsd")
+    botonUsd.addEventListener("click",function(){
+
+    let cambiar
+
+     cambiar= contador/4000
+
+    console.log(contador)
+    botonUsd.textContent=cambiar +("USD")
+})
+
+
     })
+
+   
     
     
     

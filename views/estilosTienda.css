@@ -1,7 +1,8 @@
 
 .fondo{
     background: rgb(0,0,0);
-    background: linear-gradient(90deg,rgb(99, 145, 238) 20%, rgb(235, 237, 241) 100%, #7318eafb   20%);
+    background: linear-gradient(90deg, #c5c5c2fb 28%, rgb(119, 145, 231) 54%, #c5c5c2fb  80%);
+
 }
 
 
@@ -16,11 +17,16 @@ h2{
     color: #f8e800fb !important;
 }
 .modal-content{
-    background: linear-gradient(90deg, #e0e038fb 28%, rgb(109, 109, 109) 54%,  #e0e038fb 80%) !important;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #c5c5c2fb 28%, rgb(119, 145, 231) 54%, #c5c5c2fb  80%)  !important;
 }
 
 #tituloTienda{
     font-family:fantasy;
 
     font-size: 65px;
+}
+.fondoTarjeta{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #c5c5c2fb 28%, rgb(119, 145, 231) 54%, #c5c5c2fb  80%)  !important;
 }

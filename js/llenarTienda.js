@@ -13,7 +13,6 @@
 
     ]
     
-
     let fila=document.getElementById("fila")
 
     // recorrer el arreglo y sacar fotocopia a la iformacion que hay por dentro
@@ -27,7 +26,7 @@
 
         tarjeta.classList.add("card")
         tarjeta.classList.add("h-100")
-        tarjeta.classList.add("bg-light")
+        tarjeta.classList.add("fondoTarjeta")
 
         let imagen=document.createElement("img")
 
@@ -58,6 +57,7 @@
         precio.classList.add("text-center")
         precio.classList.add("text-dark")
         precio.textContent=producto.precio
+        
 
         let botonAmpliar=document.createElement("button")
         botonAmpliar.setAttribute("type" , "button")

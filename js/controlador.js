@@ -78,12 +78,18 @@ let botonLimpiar=document.getElementById("botonLimpiar")
         borrarTotal.innerHTML="limpio"
         borrarTotal=[]
 
+        let cambiarUsd=document.getElementById("botonCamniarUsd")
+        cambiarUsd.innerHTML="limpio"
+        cambiarUsd=[]
+
         carrito=[]
+        
 
        
-
+     
         
 })
+
 
 
 

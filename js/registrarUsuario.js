@@ -6,6 +6,14 @@ import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/
 // para registrar una persona 
 
 let botonRegistro=document.getElementById("botonRegistro")
+let mensajeLogin=document.getElementById("mensajaLogin")
+
+//creo una referencia local
+
+let modalLogin=new bootstrap.Modal(document.getElementById('modalLogin'))
+
+
+
 botonRegistro.addEventListener("click",function(event){
 
     event.preventDefault()
@@ -26,14 +34,26 @@ botonRegistro.addEventListener("click",function(event){
      .then((userCredential) => {
     // Signed in
      const user = userCredential.user;
+
+      
+     mensajeLogin.textContent="exito en el registro.Bienvenida PAE"
+
+     modalLogin.show()
     // ...
     console.log("todo bien papito")
   })
     .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
+    mensajeLogin.textContent=`error : ${errorCode} :  ${errorMessage} `
+
+     modalLogin.show()
     // ..
-    console.log("error "+ errorCode+" "+errorMessage)
+    console.log("error ")
   })
   });
+
+  // boton ingreso.
+
+  
 
