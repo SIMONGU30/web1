@@ -60,7 +60,7 @@ export function verCarrito(carrito){
 
         let precioProducto=document.createElement("h4")
         precioProducto.classList.add("text-center")
-        precioProducto.textContent=producto.precio
+        precioProducto.textContent=("$")+Intl.NumberFormat("de-DE").format(producto.precio)
 
 
         let cantidadProducto=document.createElement("h5")

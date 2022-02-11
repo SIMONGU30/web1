@@ -9,6 +9,8 @@ import{verCarrito} from "./verCarrito.js"
 let producto={}
 let carrito=[]
 
+
+
 // llamo a la funcion llenar tienda
 
 llenarTienda()
@@ -64,6 +66,8 @@ let botonLimpiar=document.getElementById("botonLimpiar")
 
 
     botonLimpiar.addEventListener("click",function(){
+
+        
         
         let contenedorModal=document.getElementById("contenedorCarrito")
         contenedorModal.innerHTML=""
@@ -72,14 +76,14 @@ let botonLimpiar=document.getElementById("botonLimpiar")
         let pildora=document.getElementById("pildora")
         pildora.innerHTML=""
         pildora=[]
-
+        
 
         let borrarTotal=document.getElementById("botonTotal")
-        borrarTotal.innerHTML="limpio"
+        borrarTotal.innerHTML="total"
         borrarTotal=[]
 
         let cambiarUsd=document.getElementById("botonCamniarUsd")
-        cambiarUsd.innerHTML="limpio"
+        cambiarUsd.innerHTML="USD"
         cambiarUsd=[]
 
         carrito=[]
