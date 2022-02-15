@@ -34,4 +34,24 @@
 #imagenFROM{
     border-radius: 8px;
 }
+#offcanvasExample22{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #c5c5c2fb 28%, rgb(119, 145, 231) 54%, #c5c5c2fb  80%);
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-size: 28px;
+}
+.parraforom{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+    
 

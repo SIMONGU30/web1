@@ -23,7 +23,7 @@
         columna.classList.add("col")
 
         let tarjeta =document.createElement("div")
-
+        
         tarjeta.classList.add("card")
         tarjeta.classList.add("h-100")
         tarjeta.classList.add("fondoTarjeta")
@@ -44,7 +44,7 @@
         let nombreProducto=document.createElement("h2")
         nombreProducto.classList.add("text-center")
         nombreProducto.classList.add("text-primary")
-        nombreProducto.textContent=producto.nombre
+        nombreProducto.textContent=producto.nombre 
 
         let descripcion=document.createElement("p")
         descripcion.classList.add("text-center")

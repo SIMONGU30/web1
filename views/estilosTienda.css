@@ -1,7 +1,16 @@
 
 .fondo{
+   
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, #c5c5c2fb 28%, rgb(119, 145, 231) 54%, #c5c5c2fb  80%);
+    background: linear-gradient(90deg, #2600fffb 28%, rgb(172, 172, 172) 54%, #93cefffb  80%);
+
+}
+
+.fondobanner{
+    background-image: url(img/imagenNaruto6.png);
+    height: 200px;
+    background-attachment: fixed;
+    background-position:top center ;
 
 }
 
@@ -22,7 +31,7 @@ h2{
 }
 
 #tituloTienda{
-    font-family:fantasy;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 
     font-size: 65px;
 }

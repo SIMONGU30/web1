@@ -1,4 +1,5 @@
 // importo libreria de autenticacion
+//
 
 import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js"
 
@@ -36,7 +37,7 @@ botonRegistro.addEventListener("click",function(event){
      const user = userCredential.user;
 
       
-     mensajeLogin.textContent="exito en el registro.Bienvenida PAE"
+     mensajeLogin.textContent="exito en el registro"
 
      modalLogin.show()
     // ...
@@ -53,7 +54,13 @@ botonRegistro.addEventListener("click",function(event){
   })
   });
 
-  // boton ingreso.
+
+
+  // boton ingreso**********************************************************************.
+
+  
+
+ 
 
   
 
